@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Q1 Layout</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 40px;
+			background: #fff;
+		}
+		.container {
+			width: 800px;
+			margin: 0 auto;
+		}
+		.row-label {
+			margin-bottom: 2px;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		.row {
+			display: flex;
+			margin-bottom: 10px;
+			height: 24px;
+		}
+		.red { background: #df1717; }
+		.green { background: #054e08; }
+		.blue { background: #020e92; }
+		.orange { background: #fbc02d; }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2 style="text-align:center;">Q1 Layout</h2>
+		<div class="row-label">Row 1</div>
+		<div class="row">
+			<div class="red" style="flex: 50%;"></div>
+			<div class="blue" style="flex: 50%;"></div>
+		</div>
+		<div class="row-label">Row 2</div>
+		<div class="row">
+			<div class="green" style="flex: 95%;"></div>
+			<div class="blue" style="flex: 5%;"></div>
+		</div>
+        <div class="row-label">Students TO DO</div>
+		<div class="row-label">Row 3</div>
+		<div class="row">
+			<div class="red" style="flex: 5%;"></div>
+			<div class="green" style="flex: 90%;"></div>
+			<div class="blue" style="flex: 5%;"></div>
+		</div>
+		<div class="row-label">Row 4</div>
+		<div class="row">
+			<div class="red" style="flex: 95%;"></div>
+			<div class="blue" style="flex: 5%;"></div>
+		</div>
+		<div class="row-label">Row 5</div>
+		<div class="row" style="position: relative; height: 24px;">
+			<div class="green" style="flex: 1; position: relative; display: flex; align-items: center; justify-content: center;">
+				<div style="width: 20px; height: 16px; background: #e11613; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);"></div>
+			</div>
+		</div>
+		<div class="row-label">Row 6</div>
+		<div  class="row">
+			<div class="red" style="flex: 50%;"></div>
+			<div class="blue" style="flex: 5%"></div>
+			<div class="red" style="flex: 45%;"></div>
+		</div>
+		<div class="row-label">Row 7</div>
+        <div class="row" style="height: 24px;">
+            <div class="red" style="width: 40px;"></div>
+            <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="blue" style="height: 7px;"></div>
+            <div class="green" style="height: 7px;"></div>
+            <div class="blue" style="height: 7px;"></div>
+        </div>
+		</div>
+		<div class="row-label">Row 8</div>
+		<div class="row">
+			<div class="orange" style="flex: 5%;"></div>
+			<div class="green" style="flex: 20%;"></div>
+			<div class="orange" style="flex: 5%;"></div>
+			<div class="green" style="flex: 20%;"></div>
+			<div class="orange" style="flex: 5%;"></div>
+			<div class="green" style="flex: 20%;"></div>
+			<div class="orange" style="flex: 5%;"></div>
+			<div class="green" style="flex: 20%;"></div>
+			<div class="orange" style="flex: 5%;"></div>
+		</div>
+		<div class="row-label">Row 9</div>
+		<div class="row">
+			<div class="orange" style="flex: 24%;"></div>
+			<div class="green" style="flex: 1%;"></div>
+			<div class="orange" style="flex: 24%;"></div>
+			<div class="green" style="flex: 1%;"></div>
+			<div class="orange" style="flex: 24%;"></div>
+			<div class="green" style="flex: 1%;"></div>
+			<div class="orange" style="flex: 24%;"></div>
+			<div class="green" style="flex: 1%;"></div>
+		</div>
+	</div>
+</body>
+</html>
